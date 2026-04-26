@@ -960,7 +960,18 @@ footer {
     .nav-links.active { left: 0; }
     
     .hero h1 { font-size: 2.3rem; }
-    .hero-btns { flex-direction: column; }
+    .hero-btns { 
+        flex-direction: column; 
+        gap: 12px;
+        align-items: center; /* Center them to avoid full-width stretching */
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        min-width: 180px; /* Give them a consistent but smaller width */
+        text-align: center;
+    }
     
     .footer-grid { grid-template-columns: 1fr; }
 }
